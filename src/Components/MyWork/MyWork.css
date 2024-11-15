@@ -1,0 +1,91 @@
+.mywork {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin: 80px 170px;
+}
+
+.mywork-title {
+  position: relative;
+}
+
+.mywork-title h1 {
+  padding: 0px 30px;
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.mywork-title img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.mywork-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.mywork-container img {
+  box-sizing: border-box;
+  width: 419px;
+  height: 280px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.mywork-container img:hover {
+  transform: scale(1.1);
+  border: 4px solid #ff00ff;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.work-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.work-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  gap: 20px;
+}
+
+.show-code,
+.show-live {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 15px 25px;
+  border-radius: 50px;
+  background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106.28%);
+  transition: background 0.3s ease;
+  background: linear-gradient(264deg, #df8908 -5%, #b415ff 106.28%);
+}
+
+.show-code:hover,
+.show-live:hover {
+  background: linear-gradient(264deg, #df8908 -5%, #b415ff 106.28%);
+}
+
+.show-code:active,
+.show-live:active {
+  background: linear-gradient(264deg, #df8908 -5%, #b415ff 106.28%);
+  transform: scale(0.98); /* Slightly reduce button size on click for effect */
+}
