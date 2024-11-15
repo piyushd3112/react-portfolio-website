@@ -61,11 +61,9 @@
   cursor: pointer;
 }
 
-
-
-.hero-connect:hover{
-    border: 2px solid white;
+.hero-connect:hover {
+  border: 2px solid white;
 }
-.hero-resume:hover{
-    border-color: #b415ff;
+.hero-resume:hover {
+  border-color: #b415ff;
 }
