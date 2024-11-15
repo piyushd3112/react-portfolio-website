@@ -87,5 +87,5 @@
 .show-code:active,
 .show-live:active {
   background: linear-gradient(264deg, #df8908 -5%, #b415ff 106.28%);
-  transform: scale(0.98); /* Slightly reduce button size on click for effect */
+  transform: scale(0.98);
 }
