@@ -9,8 +9,9 @@ body {
   height: 10vh;
   color: white;
   /* background: linear-gradient(267deg, #181818, #2b2b2b); */
-  background: rgb(24, 0, 33);
-  
+  /* background: rgb(24, 0, 33); */
+  background: linear-gradient(135deg, rgb(24, 0, 33), rgb(60, 0, 84));
+
   font-family: "Roboto", serif;
 }
 
