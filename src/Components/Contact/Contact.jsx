@@ -3,7 +3,9 @@ import theme_pattern from "../../assets/theme_pattern.svg";
 import "./Contact.css";
 import mail_icon from "../../assets/mail_icon.svg";
 import location_icon from "../../assets/location_icon.svg";
-import call_icon from "../../assets/call_icon.svg";
+import { FaLinkedin } from "react-icons/fa";
+import { SiGithub } from "react-icons/si";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Contact = () => {
   const onSubmit = async (event) => {
@@ -46,12 +48,35 @@ const Contact = () => {
               <a href="mailto:dhonglep@gmail.com">dhonglep@gmail.com</a>
             </div>
             <div className="contact-detail">
-              <img src={call_icon} alt="" />
-              <a href="telto:+919158925838">+91 9158925838</a>
+              <FaWhatsapp className="icon" />
+              {/* <img src={call_icon} alt="" /> */}
+              <a href="https://wa.me/9158925838">+91 9158925838</a>
             </div>
             <div className="contact-detail">
               <img src={location_icon} alt="" />
               <p>Nagpur, Maharashtra</p>
+            </div>
+
+            <div className="contact-detail">
+              <FaLinkedin className="icon" />
+              <a
+                href="https://www.linkedin.com/in/piyush-dhongle-138584199/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+            </div>
+
+            <div className="contact-detail">
+              <SiGithub className="icon" />
+              <a
+                href="https://github.com/piyushd3112/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
             </div>
           </div>
         </div>
@@ -60,7 +85,7 @@ const Contact = () => {
           <input type="text" placeholder="Enter your name" name="name" />
           <label htmlFor="">Your Email</label>
           <input type="email" name="email" placeholder="Enter your email" />
-          <label htmlFor="Write your message"></label>
+          <label htmlFor="">Write your message</label>
           <textarea
             name="message"
             id=""
